@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myModel">
+<head>
+	<title></title>
+	<!-- <script type="text/javascript" src="scripts/angular.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<base href="/" />
+</head>
+<body >
+
+	<div id="titlebar">
+		<a ui-sref="home">HOME</a>
+		<a ui-sref="facilities">FACILITIES</a>
+		<a ui-sref="courses">COURSES</a>
+	</div>
+	<div ui-view="one" style="height:10px,background-color:orange"></div>
+	<div ui-view="two" style="height:10px,background-color:yellow"></div>
+	<!-- <script type="text/javascript" src="scripts/script.js"></script> -->
+</body>
+</html>

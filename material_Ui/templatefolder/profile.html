@@ -1,0 +1,29 @@
+<h1>{{message}}</h1>
+<md-content class="md-padding" layout-xs="column" flex="40" layout="column">
+<md-toolbar class="md-default">
+    <div class="md-toolbar-tools">
+      <h2 class="md-flex">PROFILE INFO+</h2>
+    </div>
+  </md-toolbar>
+	<div flex-xs="column" layout-xs="column" layout="column">
+		<md-card flex ="60" md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+			<md-card-title>
+				<md-card-title-media>
+					<div class="md-media-lg card-media">
+						<p>
+							<img src="dp.jpeg" class="mg-card-img">
+						</p>
+					</div>
+				</md-card-title-media>
+				<md-card-title-text  align='center'>
+				<span class="md-headline"> (HEADING)</span>
+					<span class="md-subhead">  (subheading/navigable links) </span>
+				</md-card-title-text>
+			</md-card-title>
+			<md-card-actions layout="row" layout-align="end center">
+				<md-button>Edit Info</md-button>
+				<md-button>Complete profile</md-button>
+			</md-card-actions>
+		</md-card>
+	</div>
+</md-content>

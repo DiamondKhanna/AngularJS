@@ -1,0 +1,201 @@
+<!--EXAMPLE 1 BEGINS (DATA BINDING)-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="customScript.js"></script>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+		<table>
+			<tr>
+				<td>
+					First Name:
+				</td>
+				<td>
+					<input type="text" ng-model="employee.firstName">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Last Name:
+				</td>
+				<td>
+					<input type="text" ng-model="employee.secondName">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Gender:
+				</td>
+				<td>
+					<input type="text" ng-model="employee.gender">
+				</td>
+			</tr>
+		</table>
+
+
+		<table>
+			<tr>
+				<td>
+					First Name:
+				</td>
+				<td>
+					{{employee.firstName}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Last Name:
+				</td>
+				<td>
+					{{employee.secondName}}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Gender:
+				</td>
+				<td>
+					{{employee.gender}}
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+
+</body>
+</html> -->
+
+<!-- EXAMPLE 1  ENDS-->
+
+
+
+
+<!--practice example 2 same on data binding -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="customScript.js"></script>
+</head>
+<body ng-app="myModule">
+	<div ng-controller="myController">
+		<input type="text" ng-model="box.color" >
+		{{box.color}}
+	</div>
+	<div ng-controller="myController">
+		{{box.color}}
+	</div>
+</body>
+</html> -->
+
+
+ <!-- Practice EXAMPLE ENDS-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="customScript.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-App="myModule">
+	<div ng-controller="myController">
+		<table>
+			<thead>
+				<tr>
+					<td>
+						NAME
+					</td>
+					<td>
+						AGE
+					</td>
+					<td>
+						GENDER	
+					</td>
+					<td>
+						COURSE
+					</td>
+				</tr>	
+			</thead>
+			<tbody>
+				<tr ng-repeat="member in members">
+					<td>{{member.name}}</td>
+					<td>{{member.age}}</td>
+					<td>{{member.gender}}</td>					
+					<td>{{member.course}}</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<br><br>
+
+		<!*******example of nesting of ng-repeat *************
+
+		<ul ng-controller="myController">
+			<li ng-repeat="country in countries">
+				{{country.name}}
+				<ul>
+					<li ng-repeat="city in country.cities">
+						{{city}}
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<!******** example of nesting ends ***************
+	</div>
+
+</body>
+</html> -->
+
+<!-- EVENT HANDELING EXAMPLE (START) -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.js"></script>
+	<script type="text/javascript" src="customScript.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-App="myModule">
+<div ng-controller="myController">
+	<table>
+		<thead>
+			<tr>
+				<th>SUBJECT</th>
+				<th>LIKES</th>
+				<th>DISLIKES</th>
+				<th>VOTE</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="subject in subjects">
+				<td>
+					{{subject.name}}
+				</td>
+				<td>
+					{{subject.likes}}
+				</td>
+				<td>
+					{{subject.dislikes}}
+				</td>
+				<td>
+					<input type="button" value="like" ng-click=incrementlikes(subject)>
+					<input type="button" value="dislike" ng-click=incrementdislikes(subject)>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html> -->
+
+<!-- EVENT HANDELING EXAMPLE (END)
